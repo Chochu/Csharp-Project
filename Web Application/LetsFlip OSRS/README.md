@@ -15,3 +15,5 @@ Login: Chochu
 Pass:  admin
 
 Login Database mdf in App_Data
+
+<a href="https://gyazo.com/4ed32c1fae7bf46cbcd6c0bec6e6487b"><img src="https://i.gyazo.com/4ed32c1fae7bf46cbcd6c0bec6e6487b.png" alt="Image from Gyazo" width="1337"/></a>
