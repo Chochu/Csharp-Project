@@ -6,4 +6,5 @@ Sealed_first-price_auction Website
 
 Requirement:
 Database Model
+
 <a href="https://gyazo.com/6bfc8c858b0b8113d108bfb9ee191c1d"><img src="https://i.gyazo.com/6bfc8c858b0b8113d108bfb9ee191c1d.png" alt="Image from Gyazo" width="454"/></a>
