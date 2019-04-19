@@ -9,3 +9,9 @@ and as a special thank you to RSBuddy for allowing this site to be possible!
 
 Currently we are moving from xenforo application to ASP.Net MVC. The forum will contiune to be held at xenforo, 
 however application will be held in asp.net. 
+
+
+Login: Chochu	
+Pass:  admin
+
+Login Database mdf in App_Data
