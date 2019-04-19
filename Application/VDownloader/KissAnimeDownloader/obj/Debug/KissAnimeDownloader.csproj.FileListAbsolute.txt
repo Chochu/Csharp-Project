@@ -1,0 +1,9 @@
+G:\users\jun\documents\visual studio 2013\Projects\KissAnimeDownloader\KissAnimeDownloader\bin\Debug\KissAnimeDownloader.exe.config
+G:\users\jun\documents\visual studio 2013\Projects\KissAnimeDownloader\KissAnimeDownloader\bin\Debug\KissAnimeDownloader.exe
+G:\users\jun\documents\visual studio 2013\Projects\KissAnimeDownloader\KissAnimeDownloader\bin\Debug\KissAnimeDownloader.pdb
+G:\users\jun\documents\visual studio 2013\Projects\KissAnimeDownloader\KissAnimeDownloader\obj\Debug\KissAnimeDownloader.csprojResolveAssemblyReference.cache
+G:\users\jun\documents\visual studio 2013\Projects\KissAnimeDownloader\KissAnimeDownloader\obj\Debug\KissAnimeDownloader.Form1.resources
+G:\users\jun\documents\visual studio 2013\Projects\KissAnimeDownloader\KissAnimeDownloader\obj\Debug\KissAnimeDownloader.Properties.Resources.resources
+G:\users\jun\documents\visual studio 2013\Projects\KissAnimeDownloader\KissAnimeDownloader\obj\Debug\KissAnimeDownloader.csproj.GenerateResource.Cache
+G:\users\jun\documents\visual studio 2013\Projects\KissAnimeDownloader\KissAnimeDownloader\obj\Debug\KissAnimeDownloader.exe
+G:\users\jun\documents\visual studio 2013\Projects\KissAnimeDownloader\KissAnimeDownloader\obj\Debug\KissAnimeDownloader.pdb

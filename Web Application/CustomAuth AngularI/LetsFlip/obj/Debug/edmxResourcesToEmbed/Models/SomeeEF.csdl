@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OSRSDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UserInfoId" Type="Int32" />
+    <NavigationProperty Name="UserData" Relationship="OSRSDatabaseModel.FK_Login_UserData" FromRole="Login" ToRole="UserData" />
+  </EntityType>
+  <EntityType Name="RSItem">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ItemName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="isMember" Type="Boolean" />
+    <Property Name="SellAverage" Type="Int32" />
+    <Property Name="BuyAverage" Type="Int32" />
+    <Property Name="OverAverage" Type="Int32" />
+    <Property Name="HighAlch" Type="Int32" />
+    <Property Name="LowAlch" Type="Int32" />
+    <Property Name="StorePrice" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="OSRSDatabaseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Logins" EntityType="Self.Login" />
+    <EntitySet Name="RSItems" EntityType="Self.RSItem" />
+    <EntitySet Name="UserDatas" EntityType="OSRSDatabaseModel.UserData" />
+    <AssociationSet Name="FK_Login_UserData" Association="OSRSDatabaseModel.FK_Login_UserData">
+      <End Role="UserData" EntitySet="UserDatas" />
+      <End Role="Login" EntitySet="Logins" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="UserData">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ItemList" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="role" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ItemTStamp" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Logins" Relationship="OSRSDatabaseModel.FK_Login_UserData" FromRole="UserData" ToRole="Login" />
+  </EntityType>
+  <Association Name="FK_Login_UserData">
+    <End Type="OSRSDatabaseModel.UserData" Role="UserData" Multiplicity="0..1" />
+    <End Type="OSRSDatabaseModel.Login" Role="Login" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserData">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Login">
+        <PropertyRef Name="UserInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

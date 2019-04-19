@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OSRSDatabaseModelStoreContainer" CdmEntityContainer="OSRSDatabaseEntities">
+    <EntitySetMapping Name="Logins">
+      <EntityTypeMapping TypeName="OSRSDatabaseModel.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserInfoId" ColumnName="UserInfoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RSItems">
+      <EntityTypeMapping TypeName="OSRSDatabaseModel.RSItem">
+        <MappingFragment StoreEntitySet="RSItem">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="isMember" ColumnName="isMember" />
+          <ScalarProperty Name="SellAverage" ColumnName="SellAverage" />
+          <ScalarProperty Name="BuyAverage" ColumnName="BuyAverage" />
+          <ScalarProperty Name="OverAverage" ColumnName="OverAverage" />
+          <ScalarProperty Name="HighAlch" ColumnName="HighAlch" />
+          <ScalarProperty Name="LowAlch" ColumnName="LowAlch" />
+          <ScalarProperty Name="StorePrice" ColumnName="StorePrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserDatas">
+      <EntityTypeMapping TypeName="OSRSDatabaseModel.UserData">
+        <MappingFragment StoreEntitySet="UserData">
+          <ScalarProperty Name="ItemTStamp" ColumnName="ItemTStamp" />
+          <ScalarProperty Name="role" ColumnName="role" />
+          <ScalarProperty Name="ItemList" ColumnName="ItemList" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

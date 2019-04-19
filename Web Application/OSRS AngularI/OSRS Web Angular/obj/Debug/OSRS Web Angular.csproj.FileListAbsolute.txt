@@ -1,0 +1,99 @@
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\roslyn\csc.exe
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\roslyn\vbc.exe
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\roslyn\VBCSCompiler.exe
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\OSRS Web Angular.dll.config
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\OSRS Web Angular.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\OSRS Web Angular.pdb
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\System.Web.Helpers.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\System.Web.Mvc.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\System.Web.Razor.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\System.Web.Webpages.Deployment.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\System.Web.Webpages.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\System.Web.Webpages.Razor.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\System.Web.Razor.xml
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\System.Web.Webpages.xml
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\System.Web.Webpages.Deployment.xml
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\System.Web.Webpages.Razor.xml
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\System.Web.Helpers.xml
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\System.Web.Mvc.xml
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\obj\Debug\OSRS Web Angular.csprojResolveAssemblyReference.cache
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\obj\Debug\OSRS Web Angular.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\obj\Debug\OSRS Web Angular.pdb
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\roslyn\csc.exe
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\roslyn\System.Collections.Immutable.dll
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\roslyn\System.Reflection.Metadata.dll
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\roslyn\vbc.exe
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\roslyn\VBCSCompiler.exe
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\roslyn\VBCSCompiler.exe.config
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\OSRS Web Angular.dll.config
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\OSRS Web Angular.dll
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\OSRS Web Angular.pdb
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\Microsoft.Web.Infrastructure.dll
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\System.Web.Helpers.dll
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\System.Web.Mvc.dll
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\System.Web.Razor.dll
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\System.Web.Webpages.Deployment.dll
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\System.Web.Webpages.dll
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\System.Web.Webpages.Razor.dll
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\System.Web.Razor.xml
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\System.Web.Webpages.xml
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\System.Web.Webpages.Deployment.xml
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\System.Web.Webpages.Razor.xml
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\System.Web.Helpers.xml
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\bin\System.Web.Mvc.xml
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\obj\Debug\OSRS Web Angular.csprojResolveAssemblyReference.cache
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\obj\Debug\OSRS Web Angular.dll
+G:\Users\Jun\Documents\Visual Studio 2015\Projects\OSRSAngular\OSRS Web Angular\obj\Debug\OSRS Web Angular.pdb
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\roslyn\csc.exe
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\roslyn\vbc.exe
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\roslyn\VBCSCompiler.exe
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\OSRS Web Angular.dll.config
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\OSRS Web Angular.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\OSRS Web Angular.pdb
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\System.Web.Helpers.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\System.Web.Mvc.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\System.Web.Razor.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\System.Web.Webpages.Deployment.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\System.Web.Webpages.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\System.Web.Webpages.Razor.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\System.Web.Razor.xml
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\System.Web.Webpages.xml
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\System.Web.Webpages.Deployment.xml
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\System.Web.Webpages.Razor.xml
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\System.Web.Helpers.xml
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\bin\System.Web.Mvc.xml
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\obj\Debug\OSRS Web Angular.csprojResolveAssemblyReference.cache
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\obj\Debug\OSRS Web Angular.dll
+C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\obj\Debug\OSRS Web Angular.pdb

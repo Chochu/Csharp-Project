@@ -1,0 +1,31 @@
+﻿@model LetsFlip.Models.Login
+
+@{
+    ViewBag.Title = "Let's Flip Login";
+}
+<link href="~/Content/Loginreset.css" rel="stylesheet" />
+<link href="~/Content/Loginstyle.css" rel="stylesheet" />
+
+@using (Html.BeginForm("Auth","Login",FormMethod.Post)) { 
+    <div class="wrap">
+        <div class="avatar">
+            <img src="http://lets-flip.com/data/avatars/m/2/2089.jpg?1436667175">
+        </div>
+        @*<input type="text" placeholder="username" required>*@
+        @Html.TextBoxFor(m => m.Username, new { @placeholder = "Username", @required = "required" })
+        <div class="bar">
+            <i></i>
+        </div>
+        @*<input type="password" placeholder="password" required>*@
+        @Html.PasswordFor(m => m.Password, new { @placeholder = "Password", @required = "required" })
+        <a href="" class="forgot_link">forgot ?</a>
+        <button class="btn btn-default btn-sm">Login</button> 
+        <button type="button" class="btn btn-primary btn-sm" onclick="signup()" style="margin-top:2px;">Sign up</button>
+    </div>
+}
+
+<script>
+    function signup() {
+        window.location.href = "Login/Register";
+    }
+</script>

@@ -1,0 +1,27 @@
+﻿﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-resource/1.6.0/angular-resource.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script src="~/Scripts/angular-ui-router.min.js"></script>
+<script src="~/Scripts/angular-chart.min.js"></script>
+
+
+
+<link href="~/Content/Main.css" rel="stylesheet" />
+<link href="~/Content/graph.css" rel="stylesheet" />
+
+@* {"sp": 5, "name": "Cannonball", "overall_average": 210, "buy_average": 209, "sell_average": 210, "id": 2, "members": true} *@
+<div ng-app="mainApp" class="container-fluid">
+    <resolve-loader></resolve-loader>
+    <ui-view class="fadein"></ui-view>
+</div>
+
+<script src="~/Scripts/angularStuff.js"></script>

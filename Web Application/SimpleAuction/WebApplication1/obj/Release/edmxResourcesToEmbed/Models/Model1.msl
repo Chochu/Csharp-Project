@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="listofbidModelStoreContainer" CdmEntityContainer="listofbidEntities">
+    <EntitySetMapping Name="bidtables">
+      <EntityTypeMapping TypeName="listofbidModel.bidtable">
+        <MappingFragment StoreEntitySet="bidtable">
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="reason" ColumnName="reason" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="bid_amount" ColumnName="bid_amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbls">
+      <EntityTypeMapping TypeName="listofbidModel.dbl">
+        <MappingFragment StoreEntitySet="dbl">
+          <ScalarProperty Name="v_value" ColumnName="v_value" />
+          <ScalarProperty Name="v_key" ColumnName="v_key" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="usp_highest_bidder" FunctionName="listofbidModel.Store.usp_highest_bidder" />
+    <FunctionImportMapping FunctionImportName="usp_can_bid" FunctionName="listofbidModel.Store.usp_can_bid" />
+    <FunctionImportMapping FunctionImportName="usp_show_bid" FunctionName="listofbidModel.Store.usp_show_bid" />
+    <FunctionImportMapping FunctionImportName="usp_editvar" FunctionName="listofbidModel.Store.usp_editvar" />
+  </EntityContainerMapping>
+</Mapping>

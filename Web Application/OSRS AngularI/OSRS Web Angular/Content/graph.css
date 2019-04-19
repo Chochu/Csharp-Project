@@ -1,0 +1,12 @@
+﻿#returnBtn {
+    display: inline-block;
+    float: right;
+}
+
+#itemname {
+    display: inline-block;
+}
+#goBtn{
+    margin-left:20px;
+    width:100px;
+}

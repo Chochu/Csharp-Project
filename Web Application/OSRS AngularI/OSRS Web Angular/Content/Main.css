@@ -1,0 +1,27 @@
+﻿.arrow-up {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-bottom: 10px solid;
+    border-left-color: rgba(0, 0, 0, 0.00);
+    border-right-color: rgba(0, 0, 0, 0.00);
+    border-bottom-color: #000000;
+}
+
+.arrow-down {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-top: 10px solid;
+    border-left-color: rgba(0, 0, 0, 0.00);
+    border-right-color: rgba(0, 0, 0, 0.00);
+    border-top-color: #000000;
+}
+
+/*#searchtxtbox{
+    width: 100%;
+}*/

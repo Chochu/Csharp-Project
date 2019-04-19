@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "offsetvariable";
+}
+
+<h2>Edit Variable</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Allow Bid</label>
+            <div class="col-md-10">
+                <input class="form-control text-box single-line" id="Allow" name="Allow" type="text" value="@ViewBag.ab" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="Show Bid">Show Bid</label>
+            <div class="col-md-10">
+                <input class="form-control text-box single-line" id="Show_Bid" name="Show_Bid" type="text" value="@ViewBag.sb" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="button" id="btnSubmit" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script>
+     $('#btnSubmit').click(function () {
+
+        $.ajax({
+            url: '@Url.Action("saveVar", "Home")',
+            data: {
+                'ab': $('#Allow').val(),
+                'sb': $('#Show_Bid').val()
+            },
+            type: "post",
+            cache: false
+        });
+    });
+
+</script>

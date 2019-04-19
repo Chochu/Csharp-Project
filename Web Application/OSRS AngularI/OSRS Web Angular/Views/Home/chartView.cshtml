@@ -1,0 +1,35 @@
+﻿@{
+    Layout = null;
+}
+<div class="container" ng-controller="crtl2">
+    <div class="row">
+        <div id="itemname">
+            <h2>{{itemname}}</h2>
+        </div>
+        <div id="returnBtn">
+            <a ui-sref="home">
+                <button class="btn btn-danger">Return Back to Chart</button>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <p>
+                Date: <input type="text" ng-model="selectedDP" jqdatepicker />
+                Interval: <select style="width: 100px" ng-model="selectedinterval" id="Interval" name="Interval">
+                    <option value="1440">Day</option>
+                    <option value="60">Hourly</option>
+                    <option value="30">30 Min</option>
+                </select>
+                <button class="btn btn-success" ng-click="setintdp()" id="goBtn">Go</button>
+            </p>
+        </div>
+    </div>
+    <br />
+    <br>
+    <div class="row">
+        <canvas id="line" class="chart chart-line" chart-data="data"
+                chart-labels="labels" chart-series="series"
+                chart-click="onClick"></canvas>
+    </div>
+</div>

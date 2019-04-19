@@ -1,0 +1,15 @@
+﻿AuthroizeAttribute
+HandleErrorAttribute
+    [HandleError]
+OutputCacheAttribute
+RequireHttpsAttribute
+	[RequireHttps] redirect/tunnel to https
+
+OnAuthorization = run before any other filters
+OnException
+OnActionExecuting / OnActionExecuted
+OnResultExecuting / OnResultExecuted
+
+ValidateInput
+	[ValidateInput(false)] Allow XSS, such as <b>
+

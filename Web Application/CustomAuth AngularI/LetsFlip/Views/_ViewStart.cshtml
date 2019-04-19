@@ -1,0 +1,8 @@
+﻿@if(@HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString() == "Login"){
+    Layout = "~/Views/Shared/_LoginRegisterLayout.cshtml";
+}
+else
+{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+

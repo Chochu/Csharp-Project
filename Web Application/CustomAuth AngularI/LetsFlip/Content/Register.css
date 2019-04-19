@@ -1,0 +1,46 @@
+﻿body {
+    background: #448ed3;
+    font-family: "Lato";
+}
+
+.btn-register {
+    color: #51771a;
+    background-color: #b6ee65;
+    border-color: #307d63;
+}
+
+    .btn-register:hover,
+    .btn-register:focus,
+    .btn-register:active,
+    .btn-register.active,
+    .open .dropdown-toggle.btn-register {
+        color: #ffffff;
+        background-color: #3276b1;
+        border-color: #285e8e;
+    }
+
+    .btn-register:active,
+    .btn-register.active,
+    .open .dropdown-toggle.btn-register {
+        background-image: none;
+    }
+
+    .btn-register.disabled,
+    .btn-register[disabled],
+    fieldset[disabled] .btn-register,
+    .btn-register.disabled:hover,
+    .btn-register[disabled]:hover,
+    fieldset[disabled] .btn-register:hover,
+    .btn-register.disabled:focus,
+    .btn-register[disabled]:focus,
+    fieldset[disabled] .btn-register:focus,
+    .btn-register.disabled:active,
+    .btn-register[disabled]:active,
+    fieldset[disabled] .btn-register:active,
+    .btn-register.disabled.active,
+    .btn-register[disabled].active,
+    fieldset[disabled] .btn-register.active {
+        color: #ffffff;
+        background-color: #ff0000;
+        border-color: #357ebd;
+    }

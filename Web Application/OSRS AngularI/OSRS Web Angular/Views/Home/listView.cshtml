@@ -1,0 +1,58 @@
+﻿﻿@{
+    Layout = null;
+}
+
+<div ng-controller="crtl1">
+    <div class="spinner" ng-show="loading">
+        <img src="~/Img/loading.gif" />
+    </div>
+    <br />
+    <br />
+    <div ng-hide="loading">
+        <div class="row">
+            <div class="col-lg-12">
+                <input id="searchtxtbox" type="text" class="form-control" placeholder="Search" ng-model="searchtext.name" />
+            </div>
+        </div>
+        <br />
+        <br />
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th ng-click="sortData('id')">
+                        ID  <div ng-class="getSortClass('id')"></div>
+                    </th>
+                    <th ng-click="sortData('name')">
+                        Name <div ng-class="getSortClass('name')"></div>
+                    </th>
+                    <th ng-click="sortData('overall_average')">
+                        Overall Average  <div ng-class="getSortClass('overall_average')"></div>
+                    </th>
+                    <th ng-click="sortData('buy_average')">
+                        Buy Average  <div ng-class="getSortClass('buy_average')"></div>
+                    </th>
+                    <th ng-click="sortData('sell_average')">
+                        Sell Average <div ng-class="getSortClass('sell_average')"></div>
+                    </th>
+                    <th ng-click="sortData('margin')">
+                        Margins  <div ng-class="getSortClass('margin')"></div>
+                    </th>
+                    <th ng-click="sortData('members')">
+                        Members Only  <div ng-class="getSortClass('members')"></div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in jsonda | filter: searchtext | orderBy : sortColumn:reverseSort">
+                    <td>{{item.id}}</td>
+                    <td><a ui-sref="graph({id: item.id, name:item.name})">{{item.name}}</a></td>
+                    <td>{{item.overall_average}}</td>
+                    <td>{{item.buy_average}}</td>
+                    <td>{{item.sell_average}}</td>
+                    <td>{{item.margin}}</td>
+                    <td>{{item.members}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
