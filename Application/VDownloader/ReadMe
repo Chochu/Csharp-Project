@@ -1,0 +1,6 @@
+Video Automation Downloader
+
+Use WebBrowser inside the application to get post render javascript to get the download link of the source video
+Use background worker to download video
+Auto get the next episode link and begin loading the page
+
