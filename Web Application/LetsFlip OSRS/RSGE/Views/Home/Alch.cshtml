@@ -73,9 +73,17 @@
             dataType: 'json',
             success: function (result) {
                 $.each(result, function (i, field) {
-                    if ((Math.round(field['store'] * .6) - items[i]['sell_average'] < natureRunePrice)
-                        ||(Math.round(field['store'] * .6) - items[i]['sell_average'] - natureRunePrice < maxProfitLose) 
-                        || (items[i]['sell_average'] == 0)) {
+                    try {
+                        items[i]['sell_average'];
+                    }
+                    catch (err) {
+                        console.log("Item Doesnt exist:" + i);
+                    }
+                   
+                        
+                    if ( (Math.round(field['store'] * .6) - (items[i] ? items[i]['sell_average'] : 0) < natureRunePrice)
+                        || (Math.round(field['store'] * .6) - (items[i] ? items[i]['sell_average'] : 0) - natureRunePrice < maxProfitLose)
+                        || ((items[i] ? items[i]['sell_average'] : 0) == 0)) {
                         return;
                     }
                     itemswithhighAlch.push({
@@ -84,7 +92,7 @@
                         sell_average: items[i]['sell_average'],
                         iconlink: "http://cdn.rsbuddy.com/items/" + items[i]['id'] + ".png",
                         highalch: Math.round(field['store'] * .6),
-                        profit: Math.round(field['store'] * .6) - items[i]['sell_average'] - items[561]['sell_average']
+                        profit: Math.round(field['store'] * .6) - (items[i] ? items[i]['sell_average'] : 0) - items[561]['sell_average']
                     });
                 });
                 loadchart();

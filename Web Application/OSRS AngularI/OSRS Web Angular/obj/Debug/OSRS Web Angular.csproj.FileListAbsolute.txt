@@ -97,3 +97,36 @@ C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular
 C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\obj\Debug\OSRS Web Angular.csprojResolveAssemblyReference.cache
 C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\obj\Debug\OSRS Web Angular.dll
 C:\Users\John\Documents\Visual Studio 2015\Projects\AngularOSRS\OSRS Web Angular\obj\Debug\OSRS Web Angular.pdb
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\roslyn\csc.exe
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\roslyn\System.Collections.Immutable.dll
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\roslyn\System.Reflection.Metadata.dll
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\roslyn\vbc.exe
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\roslyn\VBCSCompiler.exe
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\roslyn\VBCSCompiler.exe.config
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\OSRS Web Angular.dll.config
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\OSRS Web Angular.dll
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\OSRS Web Angular.pdb
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\Microsoft.Web.Infrastructure.dll
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\System.Web.Helpers.dll
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\System.Web.Mvc.dll
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\System.Web.Razor.dll
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\System.Web.Webpages.Deployment.dll
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\System.Web.Webpages.dll
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\System.Web.Webpages.Razor.dll
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\System.Web.Razor.xml
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\System.Web.Webpages.xml
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\System.Web.Webpages.Deployment.xml
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\System.Web.Webpages.Razor.xml
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\System.Web.Helpers.xml
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\bin\System.Web.Mvc.xml
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\obj\Debug\OSRS Web Angular.csprojResolveAssemblyReference.cache
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\obj\Debug\OSRS Web Angular.dll
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Web Application\OSRS AngularI\OSRS Web Angular\obj\Debug\OSRS Web Angular.pdb

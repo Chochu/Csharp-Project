@@ -16,3 +16,12 @@ G:\Users\Jun\Documents\visual studio 2013\Projects\KissAnimeDownloader\KissAnime
 G:\Users\Jun\Documents\visual studio 2013\Projects\KissAnimeDownloader\KissAnimeDownloader\obj\Debug\VDownloader.csproj.GenerateResource.Cache
 C:\Users\Chochu\Documents\Visual Studio 2013\Projects\VDownloader\KissAnimeDownloader\obj\Debug\AnimeDownloader.Form1.resources
 G:\Users\Jun\Documents\visual studio 2013\Projects\KissAnimeDownloader\KissAnimeDownloader\obj\Debug\AnimeDownloader.Form1.resources
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Application\VDownloader\KissAnimeDownloader\bin\Debug\KissAnimeDownloader.exe.config
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Application\VDownloader\KissAnimeDownloader\obj\Debug\KissAnimeDownloader.exe
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Application\VDownloader\KissAnimeDownloader\obj\Debug\KissAnimeDownloader.pdb
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Application\VDownloader\KissAnimeDownloader\bin\Debug\KissAnimeDownloader.exe
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Application\VDownloader\KissAnimeDownloader\bin\Debug\KissAnimeDownloader.pdb
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Application\VDownloader\KissAnimeDownloader\obj\Debug\VDownloader.csprojResolveAssemblyReference.cache
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Application\VDownloader\KissAnimeDownloader\obj\Debug\AnimeDownloader.Form1.resources
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Application\VDownloader\KissAnimeDownloader\obj\Debug\KissAnimeDownloader.Properties.Resources.resources
+E:\Users\Jun\Documents\GitHub\Csharp-Project\Application\VDownloader\KissAnimeDownloader\obj\Debug\VDownloader.csproj.GenerateResource.Cache
