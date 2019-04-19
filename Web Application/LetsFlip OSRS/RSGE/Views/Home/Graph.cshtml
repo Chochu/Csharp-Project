@@ -1,0 +1,335 @@
+﻿@{
+    ViewBag.Title = ViewBag.Message + " - Lets Flip";
+}
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <form class="form-horizontal">
+                <div id="flipChart-search">
+                    <input type="text" id="searchAC" placeholder="Enter OSRS Item Name" class="textCtrl flipChart-input col-sm-12" style="font-size: 1.2em; Color: #212121">
+                </div>
+            </form>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-lg-4 col-lg-offset-1">
+            <h2>@ViewBag.Message</h2>
+            <img id="ItemIcon" src="" />&nbsp;
+        </div>
+        <div class="col-lg-4" style="text-align: right;">
+            <button type="button" class="btn btn-success follow">Follow Item</button>
+            <div class="btn-group">
+                <button onclick="myFunction(3,1)" class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'Left'">180 Days</button>
+                <button onclick="myFunction(2,1)" class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'Middle'">30 Days</button>
+                <button onclick="myFunction(1,1)" class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'Right'">7 Days</button>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <div class="row">
+        <div id="chart" class="col-lg-8 col-lg-offset-1">
+        </div>
+
+        <div id="tooltip-Display" class="col-lg-2">
+            <div id="InfoHeader"><img src="~/Images/informationIcon.png" style="height:25px; width:25px" />&nbsp;Item Information</div>
+            <div class="row" id="info">
+                <dt>Avg. Buy Price:</dt>
+                <dd id="sellingPrice"></dd>
+            </div>
+            <div class="row" id="info">
+                <dt>Avg. Sell Price:</dt>
+                <dd id="buyingPrice"></dd>
+            </div>
+            <div class="row" id="info">
+                <dt>Margin:</dt>
+                <dd id="profitPrice"></dd>
+            </div>
+            <div class="row" id="info">
+                <dt>Margin %:</dt>
+                <dd id="profitpercent"></dd>
+            </div>
+            <br />
+            <div class="row" id="info">
+                <dt>High Alch:</dt>
+                <dd>@ViewBag.highAlch</dd> @*Need to get tset @ViewBag.highAlch from controller*@
+            </div>
+            <div class="row" id="info">
+                <dt>Low Alch:</dt>
+                <dd>@ViewBag.lowAlch</dd> @*Need to get tset @ViewBag.lowAlch from controller*@
+            </div>
+            <div class="row" id="info">
+                <dt>Store Price:</dt>
+                <dd>@ViewBag.storePrice</dd> @*Need to get tset @ViewBag.lowAlch from controller*@
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-lg-4 col-lg-offset-1">
+            <img src="~/Images/AmountIcon.png" style="height:30px; width:30px" />
+            <h2>&nbsp;Amount Traded</h2>
+        </div>
+        <div class="col-lg-4" style="text-align: right;">
+            <div class="btn-group">
+                <button onclick="myFunction(3,2)" class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'Left'">180 Days</button>
+                <button onclick="myFunction(2,2)" class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'Middle'">30 Days</button>
+                <button onclick="myFunction(1,2)" class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'Right'">7 Days</button>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div id="chartAmountSold" class="col-lg-8 col-lg-offset-1">
+        </div>
+
+        <div id="tooltip-Display" class="col-lg-2">
+            <div id="InfoHeader">
+                <img src="~/Images/AmountSoldIcon.png" style="height:25px; width:25px" />&nbsp;Amount Sold
+            </div>
+            <div class="row" id="info">
+                <dt>Quantity Brought:</dt>
+                <dd id="soldAmount"></dd>
+            </div>
+            <div class="row" id="info">
+                <dt>Quantity Sold:</dt>
+                <dd id="broughtAmount"></dd>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
+<script>
+
+    var itemimgadd = "http://cdn.rsbuddy.com/items/"+@Html.Raw(Json.Encode(ViewData["id"]))+".png"; //item picture
+    var str = @Html.Raw(Json.Encode(ViewData["webtext"])); //get the json text from controller class
+    var rsJson = JSON.parse(str);
+    var dataS = rsJson;
+    var items = [];
+    //Get the position of tooltip-Display
+    var toolTip_position = $('#tooltip-Display').position();
+
+
+    for( var key in dataS){
+        dataS[key]['ts'] = new Date(dataS[key]['ts']*1);
+    }
+
+
+    function myFunction(opt,chart1){
+        var chart;
+        if(chart1 == 1){
+            chart = $("#chart").data("kendoChart");
+        }
+        else{
+            chart = $("#chartAmountSold").data("kendoChart");
+        }
+
+
+        if(opt == 1){
+            chart.setOptions({
+                categoryAxis: {
+                    min: Seven(),
+                    max: new Date(),
+                    field: "ts",
+                    baseUnit: "days",
+                    autoBaseUnitSteps: {
+                        days: [1]
+                    },
+                    labels: {
+                        rotation: "0",
+                        format: 'MM/ dd/ yyyy',
+                        step: 1
+                    }
+                }
+            });
+        }
+        else if(opt == 2){
+            chart.setOptions({
+                categoryAxis: {
+                    min: month(),
+                    max: new Date(),
+                    field: "ts",
+                    baseUnit: "days",
+                    autoBaseUnitSteps: {
+                        days: [1]
+                    },
+                    labels: {
+                        rotation: "45",
+                        format: 'MM/ dd/ yyyy',
+                        step: 2
+                    }
+                }
+            });
+        }
+        else{
+            chart.setOptions({
+                categoryAxis: {
+                    min: TME(),
+                    max: new Date(),
+                    field: "ts",
+                    baseUnit: "days",
+                    autoBaseUnitSteps: {
+                        days: [3]
+                    },
+                    labels: {
+                        rotation: "45",
+                        format: 'MM/ dd/ yyyy',
+                        step: 10
+                    }
+                }
+            });
+        }
+    };
+
+    function TME(){ //three month earlier
+        var d = new Date();
+        d.setMonth(d.getMonth() - 3);
+        return d;
+    };
+    function month(){
+        var d = new Date();
+        d.setMonth(d.getMonth() - 1);
+        return d;
+    };
+
+    function Seven(){
+        var d = new Date();
+        d.setDate(d.getDate() - 7);
+        return d;
+    };
+
+    function loadChart(chartname, seriesField1, seriesName1, seriesField2, seriesName2){
+        $(chartname).kendoChart({
+            renderAs: "canvas",
+            dataSource: {
+                data: dataS
+            },
+            legend: {
+                position: "bottom"
+            },
+            seriesDefaults: {
+                type: "line"
+            },
+            series: [{
+                field: seriesField1,
+                name: seriesName1
+            }, {
+                field: seriesField2,
+                name: seriesName2
+            }],
+            valueAxis: {
+                labels: {
+                    format: "N0"
+                },
+                baseUnit: "Automatic"
+            },
+            categoryAxis: {
+                min: TME(),
+                max: new Date(),
+                field: "ts",
+                baseUnit: "days",
+                autoBaseUnitSteps: {
+                    days: [3]
+                },
+                labels: {
+                    rotation: "45",
+                    format: 'MM/ dd/ yyyy',
+                    step: 10
+                }
+            },
+            tooltip: {
+                visible: false,
+                shared: true,
+                position: "bottom",
+                template: "#=value#"
+            },
+            seriesHover:  function(e){
+                //console.log(e);
+                $(function(){
+                    if(chartname == "#chartAmountSold"){
+                        var sellprice = e.categoryPoints[0].value;
+                        var buyprice = e.categoryPoints[1].value;
+                        $('#broughtAmount').text(CommaFormatted(sellprice));
+                        $('#soldAmount').text(CommaFormatted(buyprice));
+                    }else{
+                        var sellprice = e.categoryPoints[0].value;
+                        var buyprice = e.categoryPoints[1].value;
+                        $('#sellingPrice').text(CommaFormatted(sellprice)+" gp");
+                        $('#buyingPrice').text(CommaFormatted(buyprice)+" gp");
+                        $('#profitPrice').text(CommaFormatted(sellprice-buyprice)+" gp");
+                        $('#profitpercent').text( (((sellprice-buyprice)/buyprice)*100).toFixed(2) +"%" );
+                    }
+                });
+            },
+            pannable: {
+                lock: "y"
+            },
+            zoomable: {
+                mousewheel: {
+                    lock: "y"
+                },
+                selection: {
+                    lock: "y"
+                }
+            }
+
+        });
+    }
+
+
+    $(document).ready(function(){
+        loadChart("#chartAmountSold","buyingCompleted","Amount Brought","sellingCompleted","Amount Sold");
+        loadChart("#chart","buyingPrice","Buying Price","sellingPrice","Selling Price");
+        document.getElementById("ItemIcon").src = itemimgadd;
+    });
+
+    $(document).ready(function () { //load json file and add to item array
+        var url = "~/JsonData/summary.json";
+        $.ajax({
+            type: 'GET',
+            url: url,
+            async: true,
+            contentType: "application/json",
+            dataType: 'json',
+            success: function (result) {
+                $.each(result, function (i, field) {
+                    items.push({
+                        id: field['id'],
+                        name: field['name'],
+                        members: field['members'],
+                        buy_average: field['buy_average'],
+                        overall_average: field['overall_average'],
+                        sell_average: field['sell_average'],
+                        iconlink: "http://cdn.rsbuddy.com/items/"+ field['id']+".png",
+                        label: field['name'],
+                        redirectpage: "Graph/?ID="+ field['id']+"&name="+field['name']
+                    });
+                });
+            },
+        });
+    });
+
+    $(function () { //Auto complete
+        $("input#searchAC").autocomplete({
+            source: items,
+            select: function (event, ui) {
+                location.href = ui.item.redirectpage;
+            }
+        }).data("ui-autocomplete")._renderItem = function (ul, item) {
+            return $( "<li></li>" )
+                .data( "item.autocomplete", item )
+                .append( "<a>" + "<img src='" + item.iconlink + "' /> " + item.label+ "</a>" )
+                .appendTo( ul )
+        };;
+    });
+
+</script>

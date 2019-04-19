@@ -1,0 +1,12 @@
+G:\Users\Jun\Documents\visual studio 2013\Projects\RunescapeGEPrice\RunescapeGEPrice\bin\Debug\RunescapeGEPrice.exe.config
+G:\Users\Jun\Documents\visual studio 2013\Projects\RunescapeGEPrice\RunescapeGEPrice\bin\Debug\RunescapeGEPrice.exe
+G:\Users\Jun\Documents\visual studio 2013\Projects\RunescapeGEPrice\RunescapeGEPrice\bin\Debug\RunescapeGEPrice.pdb
+G:\Users\Jun\Documents\visual studio 2013\Projects\RunescapeGEPrice\RunescapeGEPrice\obj\Debug\RunescapeGEPrice.csprojResolveAssemblyReference.cache
+G:\Users\Jun\Documents\visual studio 2013\Projects\RunescapeGEPrice\RunescapeGEPrice\obj\Debug\RunescapeGEPrice.Properties.Resources.resources
+G:\Users\Jun\Documents\visual studio 2013\Projects\RunescapeGEPrice\RunescapeGEPrice\obj\Debug\RunescapeGEPrice.csproj.GenerateResource.Cache
+G:\Users\Jun\Documents\visual studio 2013\Projects\RunescapeGEPrice\RunescapeGEPrice\obj\Debug\RunescapeGEPrice.exe
+G:\Users\Jun\Documents\visual studio 2013\Projects\RunescapeGEPrice\RunescapeGEPrice\obj\Debug\RunescapeGEPrice.pdb
+G:\Users\Jun\Documents\visual studio 2013\Projects\RunescapeGEPrice\RunescapeGEPrice\bin\Debug\Newtonsoft.Json.dll
+G:\Users\Jun\Documents\visual studio 2013\Projects\RunescapeGEPrice\RunescapeGEPrice\bin\Debug\Newtonsoft.Json.xml
+G:\Users\Jun\Documents\visual studio 2013\Projects\RunescapeGEPrice\RunescapeGEPrice\obj\Debug\RunescapeGEPrice.LoginForm.resources
+G:\Users\Jun\Documents\visual studio 2013\Projects\RunescapeGEPrice\RunescapeGEPrice\obj\Debug\RunescapeGEPrice.MainForm.resources

@@ -1,0 +1,48 @@
+﻿dd {
+    display: block;
+    float: right;
+    text-align: right;
+    max-width: 100%;
+}
+
+dt {
+    display: block;
+    float: left;
+    max-width: 100%;
+}
+dl {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+#InfoHeader{
+    display: block;
+    text-align: center;
+    font-size: 1.75em;
+}
+
+#info{
+    margin: 0px; !important
+}
+
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+}
+/* IE 6 doesn't support max-height
+ * we use height instead, but this forces the menu to always be this tall
+ */
+html .ui-autocomplete {
+    height: 200px;
+}
+
+#tooltip-Display {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}

@@ -1,0 +1,158 @@
+﻿
+@{
+    ViewBag.Title = "CleanHerb";
+}
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <h1>Grimy - Clean Herblore For Profit</h1>
+        </div>        
+    </div>
+    <br />
+
+    @*<div class="row">
+        <hr>
+        <div class="col-lg-8 col-lg-offset-1">
+            <h3>Nature rune &nbsp;</h3>
+            <input type="text" id="natureRune" class="textCtrl" style="font-size: 1.2em; Color: #212121">
+            <h3>&nbsp; &nbsp; Maximum Profit Lost &nbsp;</h3>
+            <input type="text" id="lostProfit" class="textCtrl" style="font-size: 1.2em; Color: #212121">
+            <button class="btn btn-default" onclick="combineList()" style="margin-left:5px">Reload</button>
+        </div>
+    </div>*@
+    <br />
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+
+            <table class="table table-bordered sortable" style="background-color: #ffffff">
+                <thead>
+                    <tr class="dataRow">
+                        <th></th>
+                        <th>Grimy Herb</th>
+                        <th>Buy Price</th>
+                        <th>Sell Price - Clean Herb</th>
+                        <th>Profit per Clean</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr class="dataRow">
+                        <td><img src="http://cdn.rsbuddy.com/items/2485.png"></img></td>
+                        <td><a href="Graph/?ID=2485&name=Lantadyme">Lantadyme</a></td>
+                        <td>1,811</td>
+                        <td>1,967</td>
+                        <td>156</td>
+                    </tr>
+
+                    <tr class="dataRow">
+                        <td><img src="http://cdn.rsbuddy.com/items/3051.png"></img></td>
+                        <td><a href="Graph/?ID=3051&name=Snapdragon">Snapdragon</a></td>
+                        <td>8,719</td>
+                        <td>8,869</td>
+                        <td>150</td>
+                    </tr>
+
+                    <tr class="dataRow">
+                        <td><img src="http://cdn.rsbuddy.com/items/219.png"></img></td>
+                        <td><a href="Graph/?ID=219&name=Torstol">Torstol</a></td>
+                        <td>7,619</td>
+                        <td>7,767</td>
+                        <td>148</td>
+                    </tr>
+
+                    <tr class="dataRow">
+                        <td><img src="http://cdn.rsbuddy.com/items/207.png"></img></td>
+                        <td><a href="Graph/?ID=207&name=Ranarr">Ranarr</a></td>
+                        <td>7,772</td>
+                        <td>7,920</td>
+                        <td>148</td>
+                    </tr>
+
+                    <tr class="dataRow">
+                        <td><img src="http://cdn.rsbuddy.com/items/215.png"></img></td>
+                        <td><a href="Graph/?ID=215&name=Cadantine">Cadantine</a></td>
+                        <td>1,450</td>
+                        <td>1,585</td>
+                        <td>135</td>
+                    </tr>
+
+                    <tr class="dataRow">
+                        <td><img src="http://cdn.rsbuddy.com/items/205.png"></img></td>
+                        <td><a href="Graph/?ID=205&name=Harralander">Harralander</a></td>
+                        <td>264</td>
+                        <td>391</td>
+                        <td>127</td>
+                    </tr>
+
+                    <tr class="dataRow">
+                        <td><img src="http://cdn.rsbuddy.com/items/213.png"></img></td>
+                        <td><a href="Graph/?ID=213&name=Kwuarm">Kwuarm</a></td>
+                        <td>2,095</td>
+                        <td>2,202</td>
+                        <td>107</td>
+                    </tr>
+
+                    <tr class="dataRow">
+                        <td><img src="http://cdn.rsbuddy.com/items/217.png"></img></td>
+                        <td><a href="Graph/?ID=217&name=Dwarf weed">Dwarf weed</a></td>
+                        <td>1,560</td>
+                        <td>1,632</td>
+                        <td>72</td>
+                    </tr>
+
+                    <tr class="dataRow">
+                        <td><img src="http://cdn.rsbuddy.com/items/201.png"></img></td>
+                        <td><a href="Graph/?ID=201&name=Marrentill">Marrentill</a></td>
+                        <td>7</td>
+                        <td>21</td>
+                        <td>14</td>
+                    </tr>
+
+                    <tr class="dataRow">
+                        <td><img src="http://cdn.rsbuddy.com/items/199.png"></img></td>
+                        <td><a href="Graph/?ID=199&name=Guam">Guam</a></td>
+                        <td>9</td>
+                        <td>14</td>
+                        <td>5</td>
+                    </tr>
+
+                    <tr class="dataRow">
+                        <td><img src="http://cdn.rsbuddy.com/items/211.png"></img></td>
+                        <td><a href="Graph/?ID=211&name=Avantoe">Avantoe</a></td>
+                        <td>1,753</td>
+                        <td>1,756</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr class="dataRow">
+                        <td><img src="http://cdn.rsbuddy.com/items/203.png"></img></td>
+                        <td><a href="Graph/?ID=203&name=Tarromin">Tarromin</a></td>
+                        <td>71</td>
+                        <td>71</td>
+                        <td>0</td>
+                    </tr>
+
+                    <tr class="dataRow">
+                        <td><img src="http://cdn.rsbuddy.com/items/209.png"></img></td>
+                        <td><a href="Graph/?ID=209&name=Irit">Irit</a></td>
+                        <td>934</td>
+                        <td>923</td>
+                        <td>-11</td>
+                    </tr>
+
+                    <tr class="dataRow">
+                        <td><img src="http://cdn.rsbuddy.com/items/3049.png"></img></td>
+                        <td><a href="Graph/?ID=3049&name=Toadflax">Toadflax</a></td>
+                        <td>1,683</td>
+                        <td>1,628</td>
+                        <td>-55</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/sorttable.js"></script>

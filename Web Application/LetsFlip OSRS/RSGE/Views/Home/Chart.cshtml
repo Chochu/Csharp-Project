@@ -1,0 +1,204 @@
+﻿@{
+    ViewBag.Title = "OSRS Flip / Merch Tool ";
+    ViewBag.Message = "OSRS Flip / Merch Tool - Compare Prices of all RuneScape Items";
+}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <form class="form-horizontal">
+                <div id="flipChart-search">
+                    <div>
+                        <h2 style="text-align:center;position:relative;">@ViewBag.Message</h2>
+                    </div>
+                    <input type="text" id="searchAC" placeholder="Enter OSRS Item Name" class="textCtrl flipChart-input col-sm-12" style="font-size: 1.2em; Color: #212121">
+                </div>
+                <h3 style="color:white;font-size: 15px">Search every item on the Grand Exchange. Get access to graphs, live prices and additional information to help you make the maximum amount of profit.</h3>
+            </form>
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <div class="col-lg-8 col-lg-offset-2">
+        <div id="grid" style="width:auto;">
+
+        </div>
+    </div>
+</div>
+<script>
+
+    function ShowDetail(e) {
+        alert(e);
+        $(".itemID").optionsPopover({
+            id: "menu1",
+            title: "Hello World!",
+            contents: [
+                { "name": "Menu Item 1", url: "m1" },
+                { "name": "Menu Item 2", id: "m2" },
+                { "name": "Link to second button's menu...", id: "menu2" }
+            ]
+        });
+    }
+
+    function loadchart() {
+        $("#grid").kendoGrid({
+            columns: [
+                //{
+                //    title: "ID",
+                //    field: "id", //<a href='#' data-toggle='popover' title='Detail' data-content='asd'> #= id # </a>
+                //    template: "<div class='itemID' onclick=\"ShowDetail('#= id #')\">  #= id # </div>",
+                //    type: "string",
+                //    filterable: {
+                //        cell: {
+                //            showOperators: false,
+                //            operator: "contains"
+                //        }
+                //    }
+                //},
+                {
+                    title: "icon",
+                    field: "id",
+                    width: "70px",
+                    template: "<img src='http://cdn.rsbuddy.com/items/#= id #.png' />",
+                    filterable: false
+                },
+                {
+                    title: "Name",
+                    field: "name",
+                    width: "auto",
+                    template: "<div class='itemName'><a href='Graph/?ID=#= id #&name=#= name #'> #= name # </a> </div>",
+                    filterable: {
+                        cell: {
+                            showOperators: false,
+                            operator: "contains"
+                        }
+                    }
+                },
+                //{
+                //    title: "Members",
+                //    field: "members",
+                //    width: "auto",
+                //    template: "<div class='itemMembers'> #= members # </div>",
+                //    filterable: false
+                //},
+                {
+                    title: "Buy Average",
+                    field: "buy_average",
+                    width: "200px",
+                    template: "<div class='itemBuy'> #= buy_average # </div>",
+                    filterable: {
+                        operators: {
+                            number: {
+                                gte: "Greater than or equal",
+                                eq: "equal",
+                                lte: "less than or equal"
+                            }
+                        }
+                    }
+                },
+                {
+                    title: "Overall Average",
+                    field: "overall_average",
+                    width: "200px",
+                    template: "<div class='itemOver'> #= overall_average # </div>",
+                    filterable: {
+                        operators: {
+                            number: {
+                                gte: "Greater than or equal",
+                                eq: "equal",
+                                lte: "less than or equal"
+                            }
+                        }
+                    }
+                },
+                {
+                    title: "Sell Average",
+                    field: "sell_average",
+                    width: "200px",
+                    template: "<div class='itemSell'> #= sell_average # </div>",
+                    filterable: {
+                        operators: {
+                            number: {
+                                gte: "Greater than or equal",
+                                eq: "equal",
+                                lte: "less than or equal"
+                            }
+                        }
+                    }
+                }
+            ],            
+            sortable: true,
+            pageable: true,
+            scrollable: true,
+            filterable: {
+                mode: "row"
+            },
+            dataSource: {
+                data: items,
+                schema: {
+                    model: {
+                        fields: {
+                            id: { type: "string" },
+                            name: { type: "string" },
+                            buy_average: { type: "number" },
+                            overall_average: { type: "number" },
+                            sell_average: { type: "number" }
+                        }
+                    }
+                },
+                pageSize: 15
+            }
+        });
+    }
+
+    function onChange(arg) {
+        var selected = $.map(this.select(), function (item) {
+            return $(item).text();
+        });
+        Console.log("Selected: " + selected.length + " item(s), [" + selected.join(", ") + "]");
+    }
+    var items = [];
+    $(document).ready(function () { //load json file and add to item array
+        var url = "../../JsonData/summary.json";
+        $.ajax({
+            type: 'GET',
+            url: url,
+            async: true,
+            contentType: "application/json",
+            dataType: 'json',
+            success: function (result) {
+                $.each(result, function (i, field) {
+                    items.push({
+                        id: field['id'],
+                        name: field['name'],
+                        members: field['members'],
+                        buy_average: field['buy_average'],
+                        overall_average: field['overall_average'],
+                        sell_average: field['sell_average'],
+                        iconlink: "http://cdn.rsbuddy.com/items/" + field['id'] + ".png",
+                        label: field['name'],
+                        redirectpage: "Graph/?ID=" + field['id'] + "&name=" + field['name']
+                    });
+                });
+                //console.log(items[0]['id'].toString());
+                loadchart();
+            }
+        });
+
+    });
+
+    $(function () { //Auto complete
+        $("input#searchAC").autocomplete({
+            source: items,
+            select: function (event, ui) {
+                location.href = ui.item.redirectpage;
+            },
+        }).data("ui-autocomplete")._renderItem = function (ul, item) {
+            return $("<li></li>")
+                .data("item.autocomplete", item)
+                .append("<a>" + "<img src='" + item.iconlink + "' /> " + item.label + "</a>")
+                .appendTo(ul)
+        };;
+    });
+</script>
+

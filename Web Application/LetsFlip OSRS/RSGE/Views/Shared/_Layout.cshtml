@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <link href="http://cdn.kendostatic.com/2016.1.112/styles/kendo.common.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://cdn.kendostatic.com/2016.1.112/styles/kendo.mobile.all.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://cdn.kendostatic.com/2016.1.112/styles/kendo.dataviz.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://cdn.kendostatic.com/2016.1.112/styles/kendo.default.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://cdn.kendostatic.com/2016.1.112/styles/kendo.dataviz.default.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="~/Content/Custom.css" rel="stylesheet" />
+    <script src="http://cdn.kendostatic.com/2016.1.112/js/jquery.min.js"></script>
+    <script src="http://cdn.kendostatic.com/2016.1.112/js/angular.min.js"></script>
+    <script src="http://cdn.kendostatic.com/2016.1.112/js/jszip.min.js"></script>
+    <script src="http://cdn.kendostatic.com/2016.1.112/js/kendo.all.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <script src="~/Scripts/jquery.waypoints.min.js"></script>
+    <script src="~/Scripts/moment.js"></script>
+    <script src="~/Scripts/Custom.js"></script>
+</head>
+<body>
+    <header>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p class="site-title">@Html.ActionLink("Lets Flip", "Index")</p>
+            </div>
+            @{
+                if (Session["LogedUserID"] != null)
+                {
+                    <div class="float-right">
+                        <nav>
+                            <ul id="menu" class="list-unstyled">
+                                <li><a href="http://lets-flip.com/">Forum</a> </li>
+                                <li>@Html.ActionLink("Chart", "Chart")</li>
+                                <li>@Html.ActionLink("Alch", "Alch")</li>
+                                <li>@Html.ActionLink("Clean Herb", "CleanHerb")</li>
+                                <li>@Html.ActionLink("Unf Potion", "UnfPotion")</li>
+                                <li>@Html.ActionLink("Set Packing", "SetPacking")</li>
+                                <li>@Html.ActionLink("Decant", "Decant")</li>
+                                <li>@Html.ActionLink("Logout", "Logout")</li>
+                            </ul>
+                        </nav>
+                    </div>
+                }
+            }
+        </div>
+    </header>
+    <div id="body">
+
+        @RenderSection("featured", required: false)
+        <section class="content main-content">
+            @RenderBody()
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p>&copy; @DateTime.Now.Year - Runescape GE by Chinese N00dl3</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

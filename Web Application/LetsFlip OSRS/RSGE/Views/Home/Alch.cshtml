@@ -1,0 +1,188 @@
+﻿@{
+    ViewBag.Title = "Alch";
+}
+
+
+<div class="container-fluid">
+    <div class="row">
+        <h1>Alch for Profit</h1>
+    </div>
+    <br />
+
+    <div class="row">
+        <hr>
+        <div class="col-lg-8 col-lg-offset-1">
+            <h3>Nature rune &nbsp;</h3>
+            <input type="text" id="natureRune" class="textCtrl" style="font-size: 1.2em; Color: #212121">
+            <h3>&nbsp; &nbsp; Maximum Profit Lost &nbsp;</h3>
+            <input type="text" id="lostProfit" class="textCtrl" style="font-size: 1.2em; Color: #212121">
+            <button class="btn btn-default" onclick="combineList()" style="margin-left:5px">Reload</button>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div id="highAlchChart" class="col-lg-10 col-lg-offset-1">
+        </div>
+    </div>
+
+
+
+</div>
+<script>
+    var natureRunePrice = 0;
+    var maxProfitLose = -100;
+    var items = [];
+    var itemswithhighAlch = [];
+
+    $(document).ready(function () {
+        $.ajax({
+            type: 'GET',
+            url: "../../JsonData/summary.json",
+            async: true,
+            contentType: "application/json",
+            dataType: 'json',
+            success: function (result) {
+                $.each(result, function (i, field) {
+                    items[field['id']] = {
+                        id: field['id'],
+                        name: field['name'],
+                        sell_average: field['sell_average'],
+                        iconlink: "http://cdn.rsbuddy.com/items/" + field['id'] + ".png"
+                    };
+                });
+                $("#natureRune").val(items[561]['sell_average']);
+                $("#lostProfit").val(-100);
+
+                combineList();
+            }
+        });
+
+
+        //console.log(items);
+    });
+    
+    function combineList() {
+        natureRunePrice = $("#natureRune").val();
+        maxProfitLose = $("#lostProfit").val();
+        itemswithhighAlch = [];
+        $.ajax({
+            type: 'GET',
+            url: "../../JsonData/names.json",
+            async: true,
+            contentType: "application/json",
+            dataType: 'json',
+            success: function (result) {
+                $.each(result, function (i, field) {
+                    if ((Math.round(field['store'] * .6) - items[i]['sell_average'] < natureRunePrice)
+                        ||(Math.round(field['store'] * .6) - items[i]['sell_average'] - natureRunePrice < maxProfitLose) 
+                        || (items[i]['sell_average'] == 0)) {
+                        return;
+                    }
+                    itemswithhighAlch.push({
+                        id: items[i]['id'],
+                        name: items[i]['name'],
+                        sell_average: items[i]['sell_average'],
+                        iconlink: "http://cdn.rsbuddy.com/items/" + items[i]['id'] + ".png",
+                        highalch: Math.round(field['store'] * .6),
+                        profit: Math.round(field['store'] * .6) - items[i]['sell_average'] - items[561]['sell_average']
+                    });
+                });
+                loadchart();
+            }
+        });
+    }
+
+    function loadchart() {
+        $("#highAlchChart").kendoGrid({
+            columns: [
+                {
+                    title: "icon",
+                    field: "id",
+                    width: "70px",
+                    template: "<img src='http://cdn.rsbuddy.com/items/#= id #.png' />",
+                    filterable: false
+                },
+                {
+                    title: "Name",
+                    field: "name",
+                    width: "auto",
+                    template: "<div class='itemName'><a href='Graph/?ID=#= id #&name=#= name #'> #= name # </a> </div>",
+                    filterable: {
+                        cell: {
+                            showOperators: false,
+                            operator: "contains"
+                        }
+                    }
+                },
+                {
+                    title: "Buy Price",
+                    field: "sell_average",
+                    width: "200px",
+                    template: "<div class='itemOver'> #= sell_average # </div>",
+                    filterable: {
+                        operators: {
+                            number: {
+                                gte: "Greater than or equal",
+                                eq: "equal",
+                                lte: "less than or equal"
+                            }
+                        }
+                    }
+                },
+                {
+                    title: "High Alch",
+                    field: "highalch",
+                    width: "200px",
+                    template: "<div class='profitCol'> #= highalch # </div>",
+                    filterable: {
+                        operators: {
+                            number: {
+                                gte: "Greater than or equal",
+                                eq: "equal",
+                                lte: "less than or equal"
+                            }
+                        }
+                    }
+                },
+                {
+                    title: "Profit",
+                    field: "profit",
+                    width: "200px",
+                    template: "<div class='profitCol'> #= profit # </div>",
+                    filterable: {
+                        operators: {
+                            number: {
+                                gte: "Greater than or equal",
+                                eq: "equal",
+                                lte: "less than or equal"
+                            }
+                        }
+                    }
+                }
+            ],
+            sortable: true,
+            pageable: true,
+            scrollable: true,
+            filterable: {
+                mode: "row"
+            },
+            dataSource: {
+                data: itemswithhighAlch,
+                schema: {
+                    model: {
+                        fields: {
+                            id: { type: "string" },
+                            name: { type: "string" },
+                            highalch: { type: "number" },
+                            sell_average: { type: "number" },
+                            profit: { type: "number" }
+                        }
+                    }
+                },
+                pageSize: 15
+            }
+
+        });
+    }
+
+</script>

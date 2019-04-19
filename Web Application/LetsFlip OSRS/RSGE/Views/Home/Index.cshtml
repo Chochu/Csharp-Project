@@ -1,0 +1,39 @@
+﻿@model RSGE.LoginInfo
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+<br />
+<br />
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    <form>
+    @*//This is for Create form tag*@
+    @Html.AntiForgeryToken() @*//This is for preventing CSRF attack*@
+    @Html.ValidationSummary(true)
+    @if (@ViewBag.Message != null)
+    {
+        <div style="border:1px solid red; color:red;">
+            @ViewBag.Message
+        </div>
+        <br />
+    }
+        
+    <div class="form-group">
+        @Html.LabelFor(a => a.Username, htmlAttributes: new { @class = "control-label col-md-2", @style = "font-size: 1.2em" })
+        @Html.TextBoxFor(a => a.Username, htmlAttributes: new { @style = "font-size: 1.2em;" })
+        @Html.ValidationMessageFor(a => a.Username)
+        </div>
+    <div class="form-group">
+        @Html.LabelFor(a => a.Userpw, htmlAttributes: new { @class = "control-label col-md-2", @style = "font-size: 1.2em" })
+        @Html.PasswordFor(a => a.Userpw, htmlAttributes: new { @style = "font-size: 1.2em;" })
+        @Html.ValidationMessageFor(a => a.Userpw)
+        </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+    @*<input type="submit" value="Login"/>*@        
+    </form>
+}
+
+
